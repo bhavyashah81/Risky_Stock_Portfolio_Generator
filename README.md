@@ -2,17 +2,17 @@
 A financial analysis system that creates high-risk investment portfolios by identifying volatile stocks and maximizing sector correlations.
 
 ## Features
-**Risk Maximization**: Identifies highest volatility stocks using standard deviation metrics
-**Sector Analysis**: Groups and analyzes stocks across 10+ industry sectors
-**Correlation Optimization**: Maximizes positive correlations between holdings
-**Smart Filtering**: Filters stocks by volume (>10,000 daily avg) and data availability
-**Concentration Strategy**: Allocates 60% of capital to top 2 correlated stocks
+- **Risk Maximization**: Identifies highest volatility stocks using standard deviation metrics
+- **Sector Analysis**: Groups and analyzes stocks across 10+ industry sectors
+- **Correlation Optimization**: Maximizes positive correlations between holdings
+- **Smart Filtering**: Filters stocks by volume (>10,000 daily avg) and data availability
+- **Concentration Strategy**: Allocates 60% of capital to top 2 correlated stocks
 
 ## Technologies and Languages Used
-**Languages**: Python, Jupyter Notebook
-**Libraries**: pandas, numpy, yfinance, matplotlib, numpy-financial, IPython
-**APIs**: Yahoo Finance API
-**Tools**: Git, CSV processing
+- **Languages**: Python, Jupyter Notebook
+- **Libraries**: pandas, numpy, yfinance, matplotlib, numpy-financial, IPython
+- **APIs**: Yahoo Finance API
+- **Tools**: CSV processing
 
 ## Usage
 
@@ -50,13 +50,13 @@ This will:
 8. Output portfolio to Stocks_Group_16.csv
 
 ## Algorithm Details
-**Risk Metric**: Standard deviation of monthly returns
-**Time Period**: 2019-01-01 to 2021-11-30
-**Portfolio Size**: 10 stocks
-**Capital Allocation**: $100,000 total
-**Top Stock Weight**: 35% (highest volatility)
-**Second Stock Weight**: 25% (highest correlation)
-**Remaining Stocks**: 5% each ($5,000 minimum)
+- **Risk Metric**: Standard deviation of monthly returns
+- **Time Period**: 2019-01-01 to 2021-11-30
+- **Portfolio Size**: 10 stocks
+- **Capital Allocation**: $100,000 total
+- **Top Stock Weight**: 35% (highest volatility)
+- **Second Stock Weight**: 25% (highest correlation)
+- **Remaining Stocks**: 5% each ($5,000 minimum)
 
 ## Output Format
 The generated CSV contains:
