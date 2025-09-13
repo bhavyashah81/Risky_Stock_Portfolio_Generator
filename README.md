@@ -10,7 +10,7 @@ A financial analysis system that creates high-risk investment portfolios by iden
 
 ## Technologies and Languages Used
 - **Languages**: Python, Jupyter Notebook
-- **Libraries**: pandas, numpy, yfinance, matplotlib, numpy-financial, IPython
+- **Libraries**: pandas, numpy, yfinance, matplotlib, numpy-financial
 - **APIs**: Yahoo Finance API
 - **Tools**: CSV processing
 
