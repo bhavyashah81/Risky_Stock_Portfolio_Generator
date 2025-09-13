@@ -8,11 +8,11 @@ A financial analysis system that creates high-risk investment portfolios by iden
 **Smart Filtering**: Filters stocks by volume (>10,000 daily avg) and data availability
 **Concentration Strategy**: Allocates 60% of capital to top 2 correlated stocks
 
-## Project Structure
-`final Finance Project.py` — Python script for portfolio generation
-`final Finance Project (1).ipynb` — Interactive Jupyter notebook version
-`Sample Tickers.csv` — Input dataset with stock tickers
-`Stocks_Group_16.csv` — Generated portfolio output (created after running)
+## Technologies and Languages Used
+**Languages**: Python, Jupyter Notebook
+**Libraries**: pandas, numpy, yfinance, matplotlib, numpy-financial, IPython
+**APIs**: Yahoo Finance API
+**Tools**: Git, CSV processing
 
 ## Usage
 
