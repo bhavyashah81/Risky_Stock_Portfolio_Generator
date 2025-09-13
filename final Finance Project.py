@@ -24,7 +24,7 @@ from datetime import datetime
 # Importing csv file with tickers and reformatting dataframe
 ticker_list = pd.read_csv("Sample Tickers.csv")
 add_columns = pd.DataFrame({ticker_list.columns[0]:ticker_list.columns[0]}, index=[len(ticker_list)])
-ticker_list = ticker_list.append(add_columns)
+ticker_list = pd.concat([ticker_list, add_columns], ignore_index=False)
 ticker_list.columns=['Tickers']
 
 
@@ -75,7 +75,7 @@ for i in range (len(ticker_list)):
     sector = stock.info.get('sector')
     add_data = pd.DataFrame({'Sectors':sector,
                              'Standard Deviation': get_deviation(stock)},index=[i])
-    sector_list = sector_list.append(add_data)
+    sector_list = pd.concat([sector_list, add_data], ignore_index=False)
 
 
 # In[6]:
@@ -112,7 +112,7 @@ ticker_list
 duplicate_list = ticker_list.copy()
 
 # resetting the index of the duplicate list
-duplicatelist.reset_index(inplace=True)
+duplicate_list.reset_index(inplace=True)
 
 # list of indices to drop later
 drop = []
@@ -578,12 +578,12 @@ ticker_list
 # In[53]:
 
 
-FinalPortfolio = stock1.append(stock2)
+FinalPortfolio = pd.concat([stock1, stock2], ignore_index=False)
 
 i = 0
 for i in range (8):
     add_stock = stock_df(ticker_list.iloc[i,0], 5000, i+3)
-    FinalPortfolio = FinalPortfolio.append(add_stock)
+    FinalPortfolio = pd.concat([FinalPortfolio, add_stock], ignore_index=False)
     
 total = pd.DataFrame({'Ticker': 'N/A',
                       'Price': 'N/A',
@@ -595,7 +595,7 @@ total = pd.DataFrame({'Ticker': 'N/A',
 # In[54]:
 
 
-FinalPortfolio = FinalPortfolio.append(total)
+FinalPortfolio = pd.concat([FinalPortfolio, total], ignore_index=False)
 
 
 # In[55]:
